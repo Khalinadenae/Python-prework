@@ -1,6 +1,8 @@
 #Question 1
 #Write a function to print "hello_USERNAME!" USERNAME is the input of the function. 
-# The first line of the code has been defined as below.
+
+import numbers
+
 
 def hello_name(user_name):
 
@@ -21,10 +23,14 @@ def first_odds():
 first_odds()
         
 #Question 3
-#Please write a Python function, max_num_in_list to return the max number of a given list. The first line of the code has been defined as below.
+#Please write a Python function, max_num_in_list to return the max number of a given list. 
+numbers=list(range(3,99))
 
-   # def max_num_in_list(a_list):
-    
+def max_num_in_list(a_list):
+    return max(a_list)
+
+max_num_in_list(numbers)
+
 
 #Question 4
 #Write a function to return if the given year is a leap year. A leap year is divisible by 4, but not divisible by 100, unless it is also divisible by 400. The return should be boolean Type (true/false).
