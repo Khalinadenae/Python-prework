@@ -1,17 +1,12 @@
 #Question 1
 #Write a function to print "hello_USERNAME!" USERNAME is the input of the function. 
 
-import numbers
-from tabnanny import check
-
-
 def hello_name(user_name):
 
          print(f"Hello {user_name}!")
 
 hello_name("kdb033")
-       
-        
+             
 #Question 2
 #Write a python function, first_odds that prints the odd numbers from 1-100 and returns nothing
 
@@ -25,6 +20,7 @@ first_odds()
         
 #Question 3
 #Please write a Python function, max_num_in_list to return the max number of a given list. 
+
 numbers=list(range(3,99))
 
 def max_num_in_list(a_list):
@@ -32,10 +28,8 @@ def max_num_in_list(a_list):
 
 max_num_in_list(numbers)
 
-
 #Question 4
 #Write a function to return if the given year is a leap year. A leap year is divisible by 4, but not divisible by 100, unless it is also divisible by 400. The return should be boolean Type (true/false).
-
 
 def is_leap_year(a_year):
 #leap year is divisible by 4, but not divisible by 100 unless it is divisible by 400
