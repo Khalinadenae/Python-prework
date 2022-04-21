@@ -2,6 +2,7 @@
 #Write a function to print "hello_USERNAME!" USERNAME is the input of the function. 
 
 import numbers
+from tabnanny import check
 
 
 def hello_name(user_name):
@@ -48,5 +49,11 @@ is_leap_year(1988)
 #Question 5
 #Write a function to check to see if all numbers in list are consecutive numbers. For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consecutive numbers. The return should be boolean Type.
 
-  #  def is_consecutive(a_list):
+def is_consecutive(list_a):
+    return sorted(list_a) == list(range(min(list_a), max(list_a)+1))
+
+numbers=[4,90,8,7,6,45,66,79,0,1,4]
+is_consecutive(numbers)
+
+print(is_consecutive(numbers))
  
